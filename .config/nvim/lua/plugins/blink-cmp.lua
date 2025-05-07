@@ -8,7 +8,7 @@ return {
     signature = { enabled = true, window = { border = "rounded" } },
     keymap = {
       -- ["<C-Space>"] = {},
-      ['<C-space>'] = { function(cmp) cmp.show({ providers = { 'snippets' } }) end },
+      ['<C-space>'] = { function(cmp) cmp.show() end },
       preset = "default",
       ["<C-K>"] = { "show", "show_documentation", "hide_documentation" },
     },
