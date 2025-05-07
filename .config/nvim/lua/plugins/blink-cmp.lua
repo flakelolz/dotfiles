@@ -7,9 +7,9 @@ return {
     },
     signature = { enabled = true, window = { border = "rounded" } },
     keymap = {
-      ['<C-space>'] = { function(cmp) cmp.show() end },
       preset = "default",
-      ["<C-K>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<C-Space>"] = { "fallback" },
+      ["<C-K>"] = { "show_documentation", "hide_documentation", "show", "fallback" },
     },
 
     -- LazyDev configuration
