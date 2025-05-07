@@ -7,9 +7,24 @@ return {
     },
     signature = { enabled = true, window = { border = "rounded" } },
     keymap = {
-      ["<C-Space>"] = {},
+      -- ["<C-Space>"] = {},
+      ['<C-space>'] = { function(cmp) cmp.show({ providers = { 'snippets' } }) end },
       preset = "default",
       ["<C-K>"] = { "show", "show_documentation", "hide_documentation" },
+    },
+
+    -- LazyDev configuration
+    sources = {
+      -- add lazydev to your completion providers
+      default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+      providers = {
+        lazydev = {
+          name = "LazyDev",
+          module = "lazydev.integrations.blink",
+          -- make lazydev completions top priority (see `:h blink.cmp`)
+          score_offset = 100,
+        },
+      },
     },
   },
 }
