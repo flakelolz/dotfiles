@@ -3,3 +3,6 @@
 .cargo/.global-cache
 .cargo/.package-cache
 .cargo/.package-cache-mutate
+.cargo/bin
+.cargo/.crates.toml
+.cargo/.crates2.json
