@@ -3,6 +3,8 @@ alias cat="bat"
 alias vi="nvim"
 # alias vim="NVIM_APPNAME=vim nvim"
 
+set -gx EDITOR nvim
+
 set fish_greeting
 
 if status is-interactive
