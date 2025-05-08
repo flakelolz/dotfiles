@@ -53,8 +53,8 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- c indentation
-vim.cmd([[autocmd FileType c set shiftwidth=4]])
+-- C/C++ indentation
+vim.cmd([[autocmd FileType c,cpp set shiftwidth=4]])
 
 -- ZMK keymap
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
