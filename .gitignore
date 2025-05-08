@@ -6,3 +6,4 @@
 .cargo/bin
 .cargo/.crates.toml
 .cargo/.crates2.json
+.config/nvim/lazyvim.json
