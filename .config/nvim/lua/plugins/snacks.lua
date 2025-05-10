@@ -1,6 +1,5 @@
 return {
   "folke/snacks.nvim",
-  ---@type snacks.Config
   opts = {
     scroll = {
       enabled = false,
@@ -12,10 +11,13 @@ return {
       },
     },
     picker = {
+      layout = { preset = "vertical", cycle = false },
       sources = {
         files = { hidden = true, ignored = true },
         grep = { hidden = true, ignored = true },
         explorer = { hidden = true, ignored = true, layout = { layout = { width = 32 } } },
+        -- stylua: ignore
+        buffers = { on_show = function() vim.cmd.stopinsert() end },
       },
     },
   },
