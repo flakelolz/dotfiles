@@ -7,3 +7,4 @@
 .cargo/.crates.toml
 .cargo/.crates2.json
 .config/nvim/lazyvim.json
+.config/fish/fish_variables
