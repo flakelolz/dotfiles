@@ -2,6 +2,7 @@ return {
   "folke/snacks.nvim",
   opts = {
     scroll = {
+      -- Disable smooth scrolling effect that's applied by default for some reason
       enabled = false,
     },
     terminal = {
@@ -11,7 +12,7 @@ return {
       },
     },
     picker = {
-      layout = { preset = "vertical", cycle = false },
+      layout = { preset = "vertical", cycle = false, layout = { width = 128 } },
       sources = {
         files = { hidden = true, ignored = true },
         grep = { hidden = true, ignored = true },
